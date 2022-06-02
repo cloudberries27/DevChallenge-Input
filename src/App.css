@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Plus+Jakarta+Sans&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  margin: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 3em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#input-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+}
+input, textarea{
+  margin: 5px 10px;
+  background-color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  padding: 1em;
+  border-radius: 7px;
+  border: 1px solid #828282;
+  width: fit-content;
+}
+label{
+  font-size: 12px;
+  margin: 0 10px;
+}
+.helper{
+  margin: 0 10px;
+  font-size: 10px;
+  color: #646363;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* ICONS */
+span.start{
+  position: absolute;
+  margin-left: 1em;
+  top: 44%;
+}
+span.start + input{
+  padding-left: 3em;
+  padding-right: 0;
+}
+span.end{
+  position: absolute;
+  margin-left: 8em;
+  top: 44%;
+}
+.end input{
+  padding-right: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* HOVER */
+input:hover, input.error:hover{
+  border: 1px solid #333;
+}
+input:hover + label, input.error:hover + label{
+  color: #333;
+}
+
+
+/* FOCUS */
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+  outline: 1px solid #2962ff;
+  border: 1px solid #2962ff;
+}
+#input-box:focus-within label {
+  color: #2962ff;
+}
+
+.error, .error p, #input-box.error:focus-within label {
+  color: red;
+}
+.error input, .error textarea{
+  border: 1px solid red;
+}
+.error input:focus, .error input:focus-visible, .error textarea:focus, .error textarea:focus-visible{
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+
+
+/* SIZES */
+input.sm{
+  padding: 0.5em 1em;
+}
+input.md{
+  padding: 0.75em 1em;
+}
+input.fullWidth{
+  width: auto;
+}
+
+
+input:disabled {
+  background-color: #f2f2f2;
+  pointer-events: none;
+  border: 1px solid #e0e0e0;
+}
+
+footer{
+  text-align: center;
 }
