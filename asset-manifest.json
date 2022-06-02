@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DevChallenge-Input/static/css/main.b1a8edf8.css",
+    "main.js": "/DevChallenge-Input/static/js/main.ea4bb401.js",
+    "index.html": "/DevChallenge-Input/index.html",
+    "main.b1a8edf8.css.map": "/DevChallenge-Input/static/css/main.b1a8edf8.css.map",
+    "main.ea4bb401.js.map": "/DevChallenge-Input/static/js/main.ea4bb401.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a8edf8.css",
+    "static/js/main.ea4bb401.js"
+  ]
+}
