@@ -42,7 +42,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Demo is above ^^
-- Does anyone know, if there is an easier way to position icons inside of the input boxes? It just seems like using abosolute positioning is wrong.
+- Does anyone know, if there is an easier way to position icons inside of the input boxes? It just seems like using absolute positioning is like cheating.
 - Learned a little more about CSS selectors.
 
 ### Built With
